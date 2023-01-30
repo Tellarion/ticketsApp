@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+
+  web:
+    image: nginx:latest
+    ports:
+        - "80:80"
+    volumes:
+        - ./site.conf:/etc/nginx/conf.d/site.conf
+        - ./ticketsApp:/ticketsApp
+        - ./logs/nginx:/var/log/nginx
+        - ./nginx.conf:/etc/nginx/nginx.conf
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+        - ./ticketsApp:/ticketsApp

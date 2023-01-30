@@ -1,0 +1,93 @@
+body {
+    background-color: #0d1117;
+    color: #fff;
+}
+
+header {
+    background-color: #161b22;
+}
+
+.showEvents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.showEvents .show {
+    display: flex;
+    background: #161b22;
+    padding: 20px;
+    margin: 10px;
+}
+
+.showEvents .show:hover {
+    background: #161b22b3;
+}
+
+.showEvents .show a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    color: #198754;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #198754;
+}
+
+::-ms-input-placeholder {
+    color: #198754;
+}
+
+.actions input {
+    width: 50%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 3px dotted #198754;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.actions input:active, .actions input:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 3px dotted #198754;
+    color: #fff;
+}
+
+.actions button {
+    width: 50%;
+}
+
+.modal-content {
+    background-color: #0d1117;
+}
+
+.btn-close {
+    background-color: #161b22;
+    color: #fff;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    border-color: #161b22;
+}
